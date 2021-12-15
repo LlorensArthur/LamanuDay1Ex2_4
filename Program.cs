@@ -1,12 +1,14 @@
-﻿string login;
-string password;
+﻿const string registeredLogin = "Manu";
+const string registeredPassword = "lamanu";
+string userLogin;
+string userPassword;
 Console.WriteLine("Veuillez entrer votre identifiant");
-login = Console.ReadLine();
+userLogin = Console.ReadLine();
 Console.WriteLine("Veuillez entrer votre mot de passe");
-password = Console.ReadLine();
-switch (login, password)
+userPassword = Console.ReadLine();
+switch ((userLogin, userPassword))
 {
-    case ("Manu","lamanu"):
+    case (registeredLogin, registeredPassword):
         Console.WriteLine("Bienvenue à la Manu.");
         break;
     default:
