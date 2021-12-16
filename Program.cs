@@ -2,11 +2,13 @@
 const string registeredPassword = "lamanu";
 string userLogin;
 string userPassword;
+// L'utilisateur saisit ses identifiants
 Console.WriteLine("Veuillez entrer votre identifiant");
 userLogin = Console.ReadLine();
 Console.WriteLine("Veuillez entrer votre mot de passe");
 userPassword = Console.ReadLine();
-switch ((userLogin, userPassword))
+// Vérification des identifiants
+switch (userLogin, userPassword)
 {
     case (registeredLogin, registeredPassword):
         Console.WriteLine("Bienvenue à la Manu.");
